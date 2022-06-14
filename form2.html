@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working form pray</title>
+
+    <script type="text/javascript">
+        function evaluateuserinput(){
+                let refreshDomAfterTriggeringEvent = false;
+
+                let firstvalue = document.getElementById("first_value").value;
+                let secondvalue = document.getElementById("second_value").value;
+                let operation = document.getElementById("operation").value;
+                let expression = firstvalue + operation + secondvalue
+                let output = eval(expression);
+                document.getElementById("output").innerHTML = output;
+
+                return refreshDomAfterTriggeringEvent
+
+        }
+    </script>
+
+</head>
+
+
+<body>
+
+    <form id="myform">
+        First Name:<br/><input id="first_name" type="text"/></br/>
+        Last Name:<br/><input id="last_name" type="text"/><br/>
+        <button id="submit_button" onclick="return evaluateUserInput();">Submit</button>
+    </form>
+    <p id="output">_______</p>
+</body>
+</html>
