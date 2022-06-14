@@ -5,3 +5,6 @@ p {
 td {
     border:dotted
 }
+::backdrop {
+    color: rgb(51, 50, 50);
+}
