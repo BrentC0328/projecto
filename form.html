@@ -5,6 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script type="text/javascript">
+        function evaluateuserinput(){
+            let userinputfirstname = document.getElementById("first_name").value;
+            let userinputlastname = document.getElementById(last_name).value;
+            let outputDisplay = "Name: " _userinputfirstname + " "userinputlastname;
+            document.getelementbyid("Output").innerhtml = outputdisplay; 
+            return false
+        }
+    </script>
+
 </head>
 <body>
     
@@ -15,9 +26,10 @@
             <br>
         Last Name:
             <br>
-                <input type="text" id="lastname"
-                <input type="submit" value="submitarino"
+                <input type="text" id="lastname">
+                <input type="submit" value="submitarino">
+                <button id="submit_button" onclick="return evaluateuserinput();">Submit</button>
      </form>
-
+     <p id="output">Here it comes!</p>
 </body>
 </html>
