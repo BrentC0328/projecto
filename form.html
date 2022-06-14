@@ -10,20 +10,19 @@
         function evaluateuserinput(){
             let userinputfirstname = document.getElementById("first_name").value;
             let userinputlastname = document.getElementById("last_name").value;
-            let outputDisplay = "Name: "+ userinputfirstname + userinputlastname;
+            let outputDisplay = "Name: "+ userinputfirstname + " " + userinputlastname;
             document.getelementbyid("Output").innerhtml = outputdisplay; 
             return false;
         }
     </script>
 
 </head>
-<body>
-    
-    <form id="My Form">
-        First name:<br><input type="text" id="first_name"></br>
-        Last Name:<br><input type="text" id="last_name"></br>
-        <button id="submit_button" onclick="return evaluateuserinput();">Submit</button>
-     </form>
-     <p id="output">Here it comes!</p>
-</body>
+    <body>
+        <form id="My Form">
+            First name:<br><input type="text" id="first_name"><br>
+            Last Name:<br><input type="text" id="last_name"><br>
+            <button id="submit_button" onclick="return evaluateuserinput();">Submit</button>
+        </form>
+        <p id="output">Here it comes!</p>
+    </body>
 </html>
