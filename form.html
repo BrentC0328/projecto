@@ -8,27 +8,21 @@
 
     <script type="text/javascript">
         function evaluateuserinput(){
-            let userinputfirstname = document.getElementById("first_name").value;
-            let userinputlastname = document.getElementById(last_name).value;
+            let userinputfirstname = document.getElementById("firstname").value;
+            let userinputlastname = document.getElementById(lastname).value;
             let outputDisplay = "Name: " _userinputfirstname + " "userinputlastname;
             document.getelementbyid("Output").innerhtml = outputdisplay; 
-            return false
+            return false;
         }
     </script>
 
 </head>
 <body>
     
-    <form id="My Form" action="javascript:myfunctionname()">
-        First name:
-            <br>
-                <input type="text" id="firstname">
-            <br>
-        Last Name:
-            <br>
-                <input type="text" id="lastname">
-                <input type="submit" value="submitarino">
-                <button id="submit_button" onclick="return evaluateuserinput();">Submit</button>
+    <form id="My Form">
+        First name:<br><input type="text" id="firstname"></br>
+        Last Name:<br><input type="text" id="lastname"></br>
+        <button id="submit_button" onclick="return evaluateuserinput();">Submit</button>
      </form>
      <p id="output">Here it comes!</p>
 </body>
