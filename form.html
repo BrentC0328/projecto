@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>name!</title>
 
     <script type="text/javascript">
         function evaluateuserinput(){
-            let userinputfirstname = document.getElementById("firstname").value;
-            let userinputlastname = document.getElementById(lastname).value;
-            let outputDisplay = "Name: " _userinputfirstname + " "userinputlastname;
+            let userinputfirstname = document.getElementById("first_name").value;
+            let userinputlastname = document.getElementById("last_name").value;
+            let outputDisplay = "Name: "+ userinputfirstname " " + userinputlastname;
             document.getelementbyid("Output").innerhtml = outputdisplay; 
             return false;
         }
@@ -20,8 +20,8 @@
 <body>
     
     <form id="My Form">
-        First name:<br><input type="text" id="firstname"></br>
-        Last Name:<br><input type="text" id="lastname"></br>
+        First name:<br><input type="text" id="first_name"></br>
+        Last Name:<br><input type="text" id="last_name"></br>
         <button id="submit_button" onclick="return evaluateuserinput();">Submit</button>
      </form>
      <p id="output">Here it comes!</p>
