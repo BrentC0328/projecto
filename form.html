@@ -7,21 +7,21 @@
     <title>name!</title>
 
     <script type="text/javascript">
-        function evaluateuserinput(){
-            let userinputfirstname = document.getElementById("first_name").value;
-            let userinputlastname = document.getElementById("last_name").value;
-            let outputDisplay = "Name: "+ userinputfirstname + " " + userinputlastname;
-            document.getelementbyid("Output").innerhtml = outputdisplay; 
+        function evaluateUserInput(){
+            let userInputFirstName = document.getElementById("first_name").value;
+            let userInputLastName = document.getElementById("last_name").value;
+            let outputDisplay = "Name: "+ userInputFirstName + " " + userInputLastName;
+            document.getElementById("Output").innerHTML = outputDisplay; 
             return false;
         }
     </script>
 
 </head>
     <body>
-        <form id="My Form">
+        <form id="myform">
             First name:<br><input type="text" id="first_name"><br>
             Last Name:<br><input type="text" id="last_name"><br>
-            <button id="submit_button" onClick="return evaluateuserinput();">Submit</button>
+            <button id="submit_button" onClick="return evaluateUserInput();">Submit</button>
         </form>
         <p id="output">____________
         </p>
